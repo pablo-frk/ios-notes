@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Notas</title>
+        <link rel="stylesheet" href="style.css" />
+        <script src="https://kit.fontawesome.com/a531a52285.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="screen">
+            <div class="app-container">
+                
+                <div class="header">
+                    <div class="windows-controls">
+                        <div class="controls" id="control1"></div>
+                        <div class="controls" id="control2"></div>
+                        <div class="controls" id="control3"></div>
+                    </div>
+
+                    <div class="tools">
+
+                        <button onclick="apagar()"><i class="fa-solid fa-trash-can"></i></button>
+                        <button onclick="toggleNegrito()"><i class="fa-regular fa-b"></i></button>
+                        <button><i class="fa-solid fa-italic" onclick="italico()"></i></button>
+                        <button><i class="fa-solid fa-list-ul" onclick="lista()"></i></button>
+                        <button><i class="fa-solid fa-link" onclick="linke()"></i></button>
+                    </div>
+                </div>
+
+                <div class="text-area">
+                    <p id="date">19 de Abril de 2024</p>
+
+                    <div id="editor" contenteditable="true">Digite seu texto aqui...</div>
+
+    </div>
+
+            </div>
+        </div>
+
+
+        <script src="script.js"></script>
+    </body>
+</html>
+
+                    <!-- <textarea name="caixa-texto" id="caixa-texto" cols="30" rows="10"></textarea> -->
+                    <!-- <span contenteditable id="span-texto">#</span> -->
