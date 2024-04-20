@@ -50,6 +50,7 @@ body {
     box-sizing: border-box;
     justify-content: space-between;
     padding: 2em;
+    /* position: fixed; */
 }
 
 /* BOTÕES DE CONTROLE DE JANELA */
@@ -114,7 +115,7 @@ body {
     box-sizing: b;
 }
 
-#date {
+#data-formatada {
     margin: .5em;
     color: gray;
     font-family: sans-serif;
@@ -153,4 +154,9 @@ body {
 
 button {    
     border: none;
+    background-color: #f4f6f7;
+}
+
+.bold {
+    font-weight: bold;
 }

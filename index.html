@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -21,17 +21,19 @@
                     <div class="tools">
 
                         <button onclick="apagar()"><i class="fa-solid fa-trash-can"></i></button>
-                        <button onclick="toggleNegrito()"><i class="fa-regular fa-b"></i></button>
-                        <button><i class="fa-solid fa-italic" onclick="italico()"></i></button>
+                        <button id="toggleButton"><i class="fa-regular fa-b"></i></button>
+                        <button data-element="italic"><i class="fa-solid fa-italic"></i></button>
                         <button><i class="fa-solid fa-list-ul" onclick="lista()"></i></button>
                         <button><i class="fa-solid fa-link" onclick="linke()"></i></button>
                     </div>
                 </div>
 
                 <div class="text-area">
-                    <p id="date">19 de Abril de 2024</p>
+                    <p id="data-formatada"></p>
 
-                    <div id="editor" contenteditable="true">Digite seu texto aqui...</div>
+                    <!-- <div id="editor" contenteditable="true">Digite seu texto aqui</div> -->
+                    <!-- <div id="output" contenteditable="true">Digite seu texto aqui</div> -->
+                    <span contenteditable id="editor">Digite seu texto aqui...</span>
 
     </div>
 
@@ -44,4 +46,3 @@
 </html>
 
                     <!-- <textarea name="caixa-texto" id="caixa-texto" cols="30" rows="10"></textarea> -->
-                    <!-- <span contenteditable id="span-texto">#</span> -->
